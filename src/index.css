@@ -1,3 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  * {
+    @apply font-open-sans;
+  }
+  html {
+    @apply scroll-smooth;
+  }
+  h1 {
+    @apply text-3xl sm:text-5xl lg:text-6xl font-bold tracking-widest;
+  }
+  h2 {
+    @apply text-2xl lg:text-4xl
+  }
+  h3 {
+    @apply text-base lg:text-2xl;
+  }
+  h4 {
+    @apply text-lg lg:text-xl;
+  }
+  h6 {
+    @apply text-base font-bold tracking-wide;
+  }
+  p {
+    @apply text-xs font-light md:text-base md:font-normal;
+  }
+  section {
+    @apply p-6 sm:p-12 lg:px-32 lg:py-16;
+  }
+  label {
+    @apply text-xs lg:text-base;
+  }
+}
+@layer components {
+  .form-input {
+    @apply text-sm lg:text-base shadow border w-full py-2 md:py-3 px-2 md:px-4 text-gray-700 focus:outline-none;
+  }
+  .btn {
+    @apply text-sm lg:text-base text-center bg-dark text-white px-6 py-2 lg:px-8 cursor-pointer capitalize;
+  }
+  .btn-outline {
+    @apply bg-white text-black px-6 py-1 md:px-10 md:py-2 cursor-pointer capitalize block;
+  }
+  .small {
+    @apply text-xs lg:text-sm font-extralight md:font-light;
+  }
+}
