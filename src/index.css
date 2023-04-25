@@ -29,16 +29,19 @@
   p {
     @apply text-xs font-light md:text-base md:font-normal;
   }
+  main {
+    @apply m-6 sm:m-12 lg:mx-32 lg:my-16;
+  }
   section {
-    @apply p-6 sm:p-12 lg:px-32 lg:py-16;
+    @apply m-6 sm:m-12 lg:mx-32 lg:my-16;
   }
   label {
     @apply text-xs lg:text-base;
   }
 }
 @layer components {
-  .form-input {
-    @apply text-sm lg:text-base shadow border w-full py-2 md:py-3 px-2 md:px-4 text-gray-700 focus:outline-none;
+  .form-select {
+    @apply text-xs lg:text-base border-2 border-gray-500 py-1 md:py-3 px-1 md:px-4 text-gray-700 focus:outline-none;
   }
   .btn {
     @apply text-sm lg:text-base text-center bg-dark text-white px-6 py-2 lg:px-8 cursor-pointer capitalize;
