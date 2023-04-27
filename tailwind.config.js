@@ -10,7 +10,7 @@ export default {
         'open-sans': ['Open Sans', 'sans-serif'],
       },
       backgroundColor: {
-        'primary': '#015376',
+        'primary': '#FEC84B',
         'secondary':'#0380B699',
         'dark':'#0B0D26'
       }
