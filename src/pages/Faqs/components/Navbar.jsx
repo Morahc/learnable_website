@@ -1,9 +1,11 @@
-const index = () => {
+// import React from 'react'
+import logo from "../../../assets/Logo.png";
+import icon from "../../../assets/Icon.png";
+export default function Navbar() {
   return (
-    // <h1>HOME</h1>
     <div className="bg-white shadow-md p-7 w-full flex justify-between h-16">
     <div className="flex items-center pl-12">
-    {/* <img src={logo} className="h-10" alt="logo" /> */}
+      <img src={logo} alt="logo" className="h-7"/>
     </div>
     <ul className="flex items-center gap-8 text-xs ">
       <li>
@@ -21,15 +23,13 @@ const index = () => {
           FAQ
         </a>
       </li>
-    
+     
     </ul>
 
     <div className="flex items-center pr-12">
-      <h1 className="pr-2">Start your journey</h1>
-      {/* <img src={icon} alt="icon"  className="h-8"/> */}
+      <h1 className="pr-2 text-sm">Start your journey</h1>
+      <img src={icon} alt='icon' className="h-8" />
     </div>
   </div>
   )
 }
-
-export default index
