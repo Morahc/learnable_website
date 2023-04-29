@@ -2,7 +2,7 @@ import sample from '../../../assets/sample.jpg';
 
 const Projects = () => {
   return (
-    <section className='flex flex-col md:flex-row gap-6'>
+    <section className='flex flex-col md:flex-row gap-6 bg-orange-50'>
       <div className='flex items-center justify-center md:w-1/2'>
         <div className='space-y-4'>
           <h2>Projects of past interns</h2>
