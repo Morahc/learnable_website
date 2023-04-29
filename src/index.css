@@ -27,13 +27,13 @@
     @apply text-base font-bold tracking-wide;
   }
   p {
-    @apply text-xs font-light md:text-sm md:font-normal;
+    @apply text-xs font-light md:text-sm md:font-normal lg:text-base;
   }
   main {
     @apply m-6 sm:m-12 lg:mx-32 lg:my-16;
   }
   section {
-    @apply m-6 sm:m-12 lg:mx-32 lg:my-16;
+    @apply p-6 sm:p-12 lg:px-32;
   }
   label {
     @apply text-xs lg:text-sm;
