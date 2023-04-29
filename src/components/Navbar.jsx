@@ -1,5 +1,6 @@
 import logo from "../assets/Logo.png";
 import icon from "../assets/Icon.png";
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   return (
@@ -9,19 +10,19 @@ export default function Navbar() {
     </div>
     <ul className="flex items-center gap-8 text-xs ">
       <li>
-        <a href="/" className="hover:text-orange-600">
+        <Link to="/" className="hover:text-orange-600">
           HOME
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="/projects" className="hover:text-orange-600">
+        <Link href="/projects" className="hover:text-orange-600">
           PROJECTS
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="/faqs" className="hover:text-orange-600">
+        <Link href="/faqs" className="hover:text-orange-600">
           FAQ
-        </a>
+        </Link>
       </li>
      
     </ul>

@@ -6,10 +6,10 @@ const index = () => {
     <section className='space-y-8'>
       <form className='flex gap-x-2 w-full md:w-1/2'>
         <select className='form-select w-full'>
-          <option selected>Learning Path</option>
+          <option defaultValue>Learning Path</option>
         </select>
         <select className='form-select w-full'>
-          <option selected>Learning Year</option>
+          <option defaultValue>Learning Year</option>
         </select>
         <button type='submit' className='btn'>
           Filter

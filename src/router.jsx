@@ -2,20 +2,39 @@ import { createBrowserRouter } from 'react-router-dom';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Faqs from './pages/Faqs';
+import Layout from './components/Layout';
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: (
+        <Layout>
+          <Home />
+        </Layout>
+      ),
+    },
+    {
+      path: '/projects',
+      element: (
+        <Layout>
+          {' '}
+          <Projects />
+        </Layout>
+      ),
+    },
+    {
+      path: '/faqs',
+      element: (
+        <Layout>
+          <Faqs />
+        </Layout>
+      ),
+    },
+  ],
   {
-    path: '/',
-    element: <Home />,
-  },
-  {
-    path: '/projects',
-    element: <Projects />,
-  },
-  {
-    path: '/faqs',
-    element: <Faqs />,
-  },
-]);
+    basename: '/',
+  }
+);
 
 export default router;
