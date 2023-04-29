@@ -1,6 +1,6 @@
-// import React from 'react'
-import logo from "../../../assets/Logo.png";
-import icon from "../../../assets/Icon.png";
+import logo from "../assets/Logo.png";
+import icon from "../assets/Icon.png";
+
 export default function Navbar() {
   return (
     <div className="bg-white shadow-md p-7 w-full flex justify-between h-16">

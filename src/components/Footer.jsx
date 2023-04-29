@@ -1,12 +1,11 @@
-// import React from 'react'
-import img from '../../../assets/Genesys logo 1.png'
-import logo from '../../../assets/Logo.png'
+// import img from '../assets/Genesys logo 1.png'
+import logo from '../assets/Logo.png'
 
 export default function Footer() {
   return (
-    <div className="w-full h-72 mt-32 bg-orange-50 flex">
+    <div className="w-full h-72 mt-6 bg-orange-50 flex">
       <div className="w-1/5 flex-col ml-20 pt-14 pb-8">
-    <img src={img} className="mb-8 w-10" />
+    {/* <img src={img} className="mb-8 w-10" /> */}
    <img src={logo} className="w-10" />
       </div>
       <div className="w-1/5 flex-col">
